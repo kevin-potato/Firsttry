@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>摇骰子对战小游戏</title>
+		<style>
+			#code1{
+				width: 69px;
+				height: 50px;
+				background-color: gray;
+				font-size: 44px;
+			}
+			#code2{
+				width: 69px;
+				height: 50px;
+				background-color: gray;
+				font-size: 44px;
+			}
+			#nav{
+				width: 200px;
+				margin: 0 auto;
+			}
+		</style>
+				
+	</head>
+	
+	<body>
+		<script>
+		function creat(){
+			var chars=['1','2','3','4','5','6'];
+			var rand1="";
+			var rand2="";
+			for(var i=0; i<1; i++){
+				var randp1= Math.floor(Math.random()*(chars.length-1));
+				var randp2= Math.floor(Math.random()*(chars.length-1));
+				rand1=chars[randp1];
+				rand2=chars[randp2];
+			}
+			document.getElementById("code1").innerHTML=rand1;
+			document.getElementById("code2").innerHTML=rand2;
+		}
+		</script>
+		<div id="nav">
+			You:<div id="code1"></div>
+			Comp:<div id="code2"></div>
+			<button onclick="creat()" margin:0 auto>开始游戏</button>
+		
+		</div>
+
+	</body>
+</html>

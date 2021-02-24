@@ -1,0 +1,23 @@
+#nav{
+	width: 200px;
+	margin: 0 auto;
+}
+
+a{				
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+a:hover{
+	color: white;
+	background-color: #ccc;
+	border: 1px solid;
+	border-color: orange;
+	font-size: 25px;
+}
